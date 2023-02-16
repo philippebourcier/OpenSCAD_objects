@@ -37,7 +37,7 @@ module moule() {
     difference() {
         cube([23,23,10],center=true);
         rotate([180]) bouton();
-        translate([0,0,4]) cylinder(h=8,d=19,center=true);
+        translate([0,0,4]) cylinder(h=8,d=21,center=true);
     }
 }
 

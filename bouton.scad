@@ -22,7 +22,7 @@ module bouton() {
     // on rajoute un donuts ou autre forme, coupé
     difference() {
         // truc marrant
-        // translate([0,0,1]) torus(3*1.2);
+        //translate([0,0,1]) torus(3*1.2);
         // donuts classique
         rotate_extrude(angle=360) { translate([10-3/2, 0])circle(d=3); }
         translate([0,0,-2]) cube([21,21,5],center=true);
@@ -37,7 +37,7 @@ module moule() {
     difference() {
         cube([23,23,10],center=true);
         rotate([180]) bouton();
-        translate([0,0,4]) cylinder(h=8,d=20,center=true);
+        translate([0,0,4]) cylinder(h=8,d=19,center=true);
     }
 }
 
